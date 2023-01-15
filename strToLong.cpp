@@ -35,14 +35,27 @@ long strToLong(const string &str) {
 }
 
 int main() {
+    // Sample strings
     string str1 = " -12 Grad";
     string str2 = "127 meter in gelb";
 
     long num1 = strToLong(str1);
     long num2 = strToLong(str2);
 
+    //output samples
+    cout << "\nBeispiele:\n" << endl;
+
     cout << "String 1: " << str1 << " => " << num1 << endl;
     cout << "String 2: " << str2 << " => " << num2 << endl;
+
+    // user input
+    string user_str;
+    cout << "\nEine Eingabe: ";
+    cin >> user_str;
+
+    // output of input string
+    long user_num = strToLong(user_str);
+    cout << "deine Eingabe: " << user_str << " => " << user_num << endl;
 
     return 0;
 }
