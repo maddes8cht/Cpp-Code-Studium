@@ -36,11 +36,15 @@ long strToLong(const string &str) {
 
 int main() {
     // Sample strings
+    // Sample strings
     string str1 = " -12 Grad";
     string str2 = "127 meter in gelb";
 
     long num1 = strToLong(str1);
     long num2 = strToLong(str2);
+
+    //output samples
+    cout << "\nBeispiele:\n" << endl;
 
     //output samples
     cout << "\nBeispiele:\n" << endl;
